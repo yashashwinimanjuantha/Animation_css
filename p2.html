@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 300px;
+            height: 300px;
+            background-color: black;
+        }
+        .container .box{
+            width: 80px;
+            height: 80px;
+            background-color: darkgoldenrod;
+            animation-name: movingAnimation;
+            animation-duration: 4s;
+            animation-timing-function: ease-in-out;
+        }
+        @keyframes movingAnimation{
+            0%{
+                transform: translateY(0px) translateX(0px);
+            }
+            25%{
+                transform: translateY(220px) translateX(0px);
+            }
+            50%{
+                transform: translateX(220px) translateY(220px);
+            }
+            75%{
+                transform: translateY(0px) translateX(220px);
+            }
+            100%{
+                transform: translateX(0px) translateY(0px);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+    </div>
+</body>
+</html>

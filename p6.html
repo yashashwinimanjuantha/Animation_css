@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .container{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: #0c0c0c;
+            gap: 10px;
+            overflow: hidden
+            /* .box*10[style="--time:0.$s"]; */
+        }
+
+        .box{
+            width: 200px;
+            height: 2px;
+            background: linear-gradient(45deg, rgb(82, 255, 137), rgb(3, 89, 187));
+            border-radius: 10px;
+            animation: rotater 2s linear infinite ;
+            animation-delay: var(--time);
+            position: relative;
+         
+        }
+        .box::before{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 100px;
+            background-color: rgb(3, 89, 187);
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+        }
+        .box::after{
+            content: '';
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            border-radius: 100px;
+            background-color: rgb(82, 255, 137);
+            top: 50%;
+            transform: translateY(-50%);
+            right: 0;
+        }
+
+        
+
+        @keyframes rotater {
+                from{
+                    transform: rotateY(0deg);
+                }
+                to{
+                    transform: rotateY(360deg);
+                }
+        }
+    </style>
+</head>
+<body>
+    <!-- .box*10[style="--time:0.$s"] -->
+    <div class="container">
+        <div class="box" style="--time:0.1s"></div>
+        <div class="box" style="--time:0.2s"></div>
+        <div class="box" style="--time:0.3s"></div>
+        <div class="box" style="--time:0.4s"></div>
+        <div class="box" style="--time:0.5s"></div>
+        <div class="box" style="--time:0.6s"></div>
+        <div class="box" style="--time:0.7s"></div>
+        <div class="box" style="--time:0.8s"></div>
+        <div class="box" style="--time:0.9s"></div>
+        <div class="box" style="--time:1s"></div>
+        <div class="box" style="--time:0.1s"></div>
+        <div class="box" style="--time:0.2s"></div>
+        <div class="box" style="--time:0.3s"></div>
+        <div class="box" style="--time:0.4s"></div>
+        <div class="box" style="--time:0.5s"></div>
+        <div class="box" style="--time:0.6s"></div>
+        <div class="box" style="--time:0.7s"></div>
+        <div class="box" style="--time:0.8s"></div>
+        <div class="box" style="--time:0.9s"></div>
+        <div class="box" style="--time:1s"></div>
+        <div class="box" style="--time:0.1s"></div>
+        <div class="box" style="--time:0.2s"></div>
+        <div class="box" style="--time:0.3s"></div>
+        <div class="box" style="--time:0.4s"></div>
+        <div class="box" style="--time:0.5s"></div>
+        <div class="box" style="--time:0.6s"></div>
+        <div class="box" style="--time:0.7s"></div>
+        <div class="box" style="--time:0.8s"></div>
+        <div class="box" style="--time:0.9s"></div>
+        <div class="box" style="--time:1s"></div>
+        <div class="box" style="--time:0.1s"></div>
+        <div class="box" style="--time:0.2s"></div>
+        <div class="box" style="--time:0.3s"></div>
+        <div class="box" style="--time:0.4s"></div>
+        <div class="box" style="--time:0.5s"></div>
+        <div class="box" style="--time:0.6s"></div>
+        <div class="box" style="--time:0.7s"></div>
+        <div class="box" style="--time:0.8s"></div>
+        <div class="box" style="--time:0.9s"></div>
+        <div class="box" style="--time:1s"></div>
+        <div class="box" style="--time:0.1s"></div>
+        <div class="box" style="--time:0.2s"></div>
+        <div class="box" style="--time:0.3s"></div>
+        <div class="box" style="--time:0.4s"></div>
+        <div class="box" style="--time:0.5s"></div>
+        <div class="box" style="--time:0.6s"></div>
+        <div class="box" style="--time:0.7s"></div>
+        <div class="box" style="--time:0.8s"></div>
+        <div class="box" style="--time:0.9s"></div>
+        <div class="box" style="--time:1s"></div>
+        <div class="box" style="--time:0.1s"></div>
+        <div class="box" style="--time:0.2s"></div>
+        <div class="box" style="--time:0.3s"></div>
+        <div class="box" style="--time:0.4s"></div>
+        <div class="box" style="--time:0.5s"></div>
+        <div class="box" style="--time:0.6s"></div>
+        <div class="box" style="--time:0.7s"></div>
+        <div class="box" style="--time:0.8s"></div>
+        <div class="box" style="--time:0.9s"></div>
+        <div class="box" style="--time:1s"></div>
+        
+    </div>
+    
+</body>
+</html>

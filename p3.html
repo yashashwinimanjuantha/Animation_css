@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            min-height: 100vh;
+            padding: 20px;
+            background-color: #0c0c0c;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+        }
+        .box{
+            width: 20px;
+            height: 70px;
+            border-radius: 20px;
+            background-color: #fff;
+            animation-name: animate;
+            animation-duration: 3s;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+        }
+        .box:nth-child(1){
+          animation-delay: 0s;
+        }
+        .box:nth-child(2){
+          animation-delay: 0.3s;
+        }
+        .box:nth-child(3){
+          animation-delay: 0.6s;
+        }
+        .box:nth-child(4){
+          animation-delay: 0.9s;
+        }
+        .box:nth-child(5){
+          animation-delay: 1.2s;
+        }
+
+        @keyframes animate{
+            from{
+                transform: rotateY(0deg) skew(0deg) translateY(-100px);
+                /* filter: blur(20px); */
+            }
+            to{
+                transform: rotateY(360deg) skew(45deg) translateY(100px);
+                opacity: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
